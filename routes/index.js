@@ -30,5 +30,7 @@ router.post('/create-product', productInfo, homeController.createProduct);
 //routing user controller
 router.use('/users', require('./users'));
 
+//product routing
+router.use('/products', require('./products'));
 
 module.exports = router;

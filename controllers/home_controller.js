@@ -41,7 +41,8 @@ module.exports.createProduct = async function (req, res, next) {
             product_size: req.body.product_size,
             images: filesArray,
             product_qty: req.body.product_qty,
-            product_color: req.body.product_color
+            product_color: req.body.product_color,
+            user: req.cookies.user_id
         });
 
     products.save(function (err, product) {

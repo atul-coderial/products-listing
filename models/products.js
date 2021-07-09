@@ -18,7 +18,11 @@ const productSchema = new mongoose.Schema({
     product_color: {
         type: String
     },
-    images: [Object]
+    images: [Object],
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }
 }, {
     timestamps: true
 });

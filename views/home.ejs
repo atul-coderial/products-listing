@@ -1,0 +1,46 @@
+
+<div class="outer-div">
+    <form action="/create-product" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Product Information:</legend>
+            <div class="form-group">
+                <label for="product_name" class="lf">
+                    Product Name:
+                </label>
+                <input type="text" id="product_name" name="product_name">
+            </div>
+            <div class="form-group">
+                <label for="product_type" class="lf">Product Type:</label>
+                <select name="product_type" id="product_type">
+                    <option>Product Type</option>
+                    <option value="shirt">Shirt</option>
+                    <option value="t-shirt">T-shirt</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="laptop">Laptop</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="product_size" class="lf">Product Size:</label>
+                <select name="product_size" id="product_size">
+                    <option>product Size</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="80">80</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity" class="lf">Quantity:</label>
+                <input type="number" name="product_qty">
+            </div>
+            <div class="form-group">
+                <label for="color" class="lf">Product Color:</label>
+                <input type="color" name="product_color" value="#ffffff">
+            </div>
+            <div class="form-group">
+                <label for="product-image" class="lf">Product Image:</label>
+                <input type="file" name="photos" multiple id="product-image">
+            </div>
+            <input type="submit" class="btn btn-primary btn-lg" value="Submit" style="margin-bottom: 10px;">
+        </fieldset>
+    </form>
+</div>

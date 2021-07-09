@@ -1,0 +1,29 @@
+.hea {
+    background-color: orange;
+    height: 7vh;
+    margin-top: -16px;
+  }
+  
+  header ul {
+    list-style: none;
+  }
+  
+  header ul li {
+    display: inline-flex;
+    float: right;
+    margin-top: 14px;
+    margin-right: 12px;
+    padding: 1vw;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  header #brand {
+    float: left;
+    margin-top: 10px;
+    margin-left: 17px;
+  }
+  
